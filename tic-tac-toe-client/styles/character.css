@@ -1,0 +1,27 @@
+@keyframes blink {
+  0% {
+    opacity: .45;
+  }
+
+  50% {
+    opacity: .7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.character {
+  width: 108px;
+  height: 72px;
+  background-color: transparent;
+}
+
+.wing {
+  animation: blink 1s infinite linear;
+}
+
+.meow {
+  width: 80px;
+}

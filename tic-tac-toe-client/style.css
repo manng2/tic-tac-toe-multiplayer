@@ -1,0 +1,14 @@
+* {
+  background-color: #46199C;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
