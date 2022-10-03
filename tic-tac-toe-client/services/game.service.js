@@ -1,3 +1,5 @@
+import { PLAYER } from "../utils/const.js";
+
 class GameService {
   static instance;
   #currentUser;
@@ -8,7 +10,7 @@ class GameService {
       return GameService.instance;
     }
 
-    this.#currentUser = 'x';
+    this.#currentUser = PLAYER.ONE;
     this.#games = [
       [null, null, null],
       [null, null, null],
@@ -21,7 +23,7 @@ class GameService {
   }
 
   changeUser() {
-    this.#currentUser = this.#currentUser === 'x' ? 'o' : 'x';
+    this.#currentUser = this.#currentUser === PLAYER.ONE ? PLAYER.TWO : PLAYER.ONE;
   }
 
   markSelected(pattern) {

@@ -28,7 +28,7 @@ io.on('connection', (socket) => {
   socket.on('select-cell', data => {
     console.log(data);
 
-    socket.emit('select-cell', data);
+    io.emit('select-cell', data);
   })
 })
 
